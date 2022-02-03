@@ -1,5 +1,5 @@
 // Initialize my own map
-var map = L.map('washMap').setView([38.083, -90.69], 14);
+var map = L.map('washMap').setView([38.0832, -90.691], 15);
 
 // Initialize the basemap
 var Esri_WorldTopoMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
