@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "description": "Petroglyphs"
+        "description": "Petroglyph"
       },
       "geometry": {
         "type": "Point",
@@ -13,6 +13,6 @@
           38.07796658392118
         ]
       }
-    },
+    }
   ]
 }
