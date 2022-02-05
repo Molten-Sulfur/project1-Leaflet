@@ -20,8 +20,11 @@ jQuery.getJSON("https://raw.githubusercontent.com/Molten-Sulfur/project1-Leaflet
 }).addTo(map);
   });
 
+// A function we'll use later that will add a popup to each marker.
+function onEachFeature(feature, layer) {layer.bindPopup(feature.properties.description);}
+
 // Add the petroglyphs to the map
-// It's easier just to make separate geoJSONs for petroglyphs and overlooks
+// It's easier just to make separate geoJSONs for separate symbols
 //than doing one layer and assigning different symbology.
 jQuery.getJSON("https://raw.githubusercontent.com/Molten-Sulfur/project1-Leaflet/main/WASH-petroglyph.geojson",function(data) {
   //define the logo for petroglyphs
@@ -30,6 +33,7 @@ jQuery.getJSON("https://raw.githubusercontent.com/Molten-Sulfur/project1-Leaflet
     iconSize: [42,25]
   });
   L.geoJson(data,{
+    onEachFeature: onEachFeature,
     pointToLayer: function(feature,latlng){
 	  return L.marker(latlng,{icon: petroglyphIcon});
     }
@@ -44,6 +48,22 @@ jQuery.getJSON("https://raw.githubusercontent.com/Molten-Sulfur/project1-Leaflet
     iconSize: [30,30]
   });
   L.geoJson(data,{
+    onEachFeature: onEachFeature,
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: overlookIcon});
+    }
+  }  ).addTo(map);
+});
+
+//Add the other sites to the map
+jQuery.getJSON("https://raw.githubusercontent.com/Molten-Sulfur/project1-Leaflet/main/WASH-otherSites.geojson",function(data) {
+  //define the logo for points of interest.
+  var overlookIcon = L.icon({
+    iconUrl: 'https://raw.githubusercontent.com/Molten-Sulfur/project1-Leaflet/main/poi6.png',
+    iconSize: [18,18]
+  });
+  L.geoJson(data,{
+    onEachFeature: onEachFeature,
     pointToLayer: function(feature,latlng){
 	  return L.marker(latlng,{icon: overlookIcon});
     }
