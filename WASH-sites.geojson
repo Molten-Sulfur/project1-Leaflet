@@ -39,6 +39,97 @@
           38.08503
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.68228960037231,
+          38.08730031296188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Trailhead (Opossum Track)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.68489670753479,
+          38.084606511223065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Trailhead (Rockywood)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.68436563014984,
+          38.08544675157042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Trailhead (1000 Steps)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.68356096744537,
+          38.08554386415384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Gas Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.67713975906372,
+          38.08057829022258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "RV Camping"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.69474041461945,
+          38.08570431074821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Thunderbird Lodge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.68441390991211,
+          38.085662087994365
+        ]
+      }
     }
   ]
 }
